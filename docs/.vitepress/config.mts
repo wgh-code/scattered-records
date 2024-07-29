@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/scattered-records/',
   title: "notes",
   description: "scattered notes",
   themeConfig: {
