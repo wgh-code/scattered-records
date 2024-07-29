@@ -23,7 +23,7 @@
     "effects"
   ],
   "author": "wgh-code",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "vitepress": "^1.3.1"
   }

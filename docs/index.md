@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "notes"
-  text: "scattered notes"
+  name: "ScatteredNotes"
+  text: "Used for storing scattered notes and code effects"
   tagline: My great project tagline
   actions:
     - theme: brand
@@ -15,7 +15,8 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
+  - icon: 🛠️
+    title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
