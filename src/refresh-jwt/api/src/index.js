@@ -20,15 +20,15 @@ app.post("/api/login", function (req, res) {
   if (userInfo.username !== "admin" || userInfo.password !== "123456") {
     return res.send({
       status: 400,
-      message: "Login succeeded",
+      message: "Login failed",
     });
   }
 
   const token = jwt.sign({ username: userInfo.username }, secret, {
-    expiresIn: "10s",
+    expiresIn: "3s",
   });
   const refresh_token = jwt.sign({ username: userInfo.username }, secret, {
-    expiresIn: "7d",
+    expiresIn: "6s",
   });
 
   res.send({
@@ -46,10 +46,10 @@ app.get("/api/refresh-token", (req, res) => {
   );
 
   const token = jwt.sign({ username }, secret, {
-    expiresIn: "10s",
+    expiresIn: "3s",
   });
   const refresh_token = jwt.sign({ username }, secret, {
-    expiresIn: "7d",
+    expiresIn: "6s",
   });
   res.send({
     status: 200,
@@ -61,6 +61,8 @@ app.get("/api/refresh-token", (req, res) => {
 
 app.get("/api/list", (req, res) => {
   res.send({
+    status: 200,
+    message: "success",
     list: [
       {
         goods: "meat",
