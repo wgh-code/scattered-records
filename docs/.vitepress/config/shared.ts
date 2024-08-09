@@ -1,35 +1,26 @@
 import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
-  lang: "zh-CN",
+export const sharedConfig = defineConfig({
+  lang: "zh",
   base: "/scattered-records/",
-  title: "notes",
-  description: "scattered notes",
+  appearance: "dark",
+  title: "scattered records",
+
+  head: [["link", { rel: "icon", href: "/scattered-records/favicon.ico" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/favicon.ico",
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
-    ],
-
-    sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
-      },
-    ],
-
     socialLinks: [
       {
         icon: "github",
         link: "https://github.com/wgh-code/scattered-records.git",
       },
     ],
+    footer: {
+      copyright: "Copyright © 2024-present wgh-code",
+      message: "Released under the MIT License.",
+    },
     lastUpdated: {
       text: "更新于",
       formatOptions: {
@@ -60,11 +51,5 @@ export default defineConfig({
         },
       },
     },
-
-    footer: {
-      message: "Released under the MIT License.",
-      copyright: "Copyright © 2019-present wgh-code",
-    },
   },
-  head: [["link", { rel: "icon", href: "/scattered-records/favicon.ico" }]],
 });

@@ -2,19 +2,19 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-titleTemplate: "scattered records des"
+titleTemplate: "片段碎片"
 
 hero:
-  name: "Scattered Records"
-  text: "Includes knowledge, questions, and solutions"
-  tagline: "Used to record scattered notes and code implementation examples"
+  name: "零散的记录"
+  text: "包含知识、问题及解决方案"
+  tagline: "用于记录零散的笔记和代码实现示例"
   actions:
     - theme: brand
-      text: View Knowledge
-      link: /knowledge/javascript/index
+      text: 查看知识
+      link: /zh/knowledge/javascript/index
     - theme: alt
-      text: View Questions
-      link: /questions/actual-combat/refresh-jwt
+      text: 查看问题
+      link: /zh/questions/actual-combat/refresh-jwt
 
 features:
   - icon: 🛠️

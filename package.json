@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Used for storing scattered notes and code effects",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "doc": "doc"
   },
